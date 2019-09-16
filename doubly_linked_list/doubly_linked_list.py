@@ -15,6 +15,9 @@ class ListNode:
     if current_next:
       current_next.prev = self.next
 
+  def __str__(self):
+    return f"Value: {self.value}"
+
   # """Wrap the given value in a ListNode and insert it
   # before this node. Note that this node could already
   # have a previous node it is point to."""
